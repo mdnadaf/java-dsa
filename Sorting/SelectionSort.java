@@ -26,10 +26,19 @@ public class SelectionSort {
 }
 
 
+// ######### Selection Sort ##################
 /*
-Selection Sort
-Minimum element find karke swap karta hai
-Kam swaps hote hain
+Har pass me minimum element find karte hain
+Aur current position se swap kar dete hain
 Stable nahi hai
-All case me O(n²)
+Adaptive nahi hai
 */
+
+// Time Complexity
+/*
+best case    : O(n²)
+average case : O(n²)
+worst case   : O(n²)
+*/
+
+// Space Complexity : O(1)

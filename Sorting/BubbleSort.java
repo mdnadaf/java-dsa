@@ -26,11 +26,19 @@ public class BubbleSort {
     }
 }
 
-
+// ######### Bubble Sort ##################
 /*
-Bubble Sort
-Adjacent elements compare hote hai
+Adjacent elements compare hote hain
 Largest element har pass me end me pahuchta hai
 Stable
-Best Case: O(n)
+Adaptive
 */
+
+// Time Complexity
+/*
+best case    : O(n)
+average case : O(n²)
+worst case   : O(n²)
+*/
+
+// Space Complexity : O(1)

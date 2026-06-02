@@ -22,10 +22,19 @@ public class InsertionSort {
     }
 }
 
+// ######### Insertion Sort ##################
 /*
-Insertion Sort
 Cards arrange karne jaisa
-Sorted part maintain karta hai
-Nearly sorted array ke liye best
+Sorted part me current element ko sahi position par insert karte hain
 Stable
+Adaptive
 */
+
+// Time Complexity
+/*
+best case    : O(n)
+average case : O(n²)
+worst case   : O(n²)
+*/
+
+// Space Complexity : O(1)
