@@ -1,5 +1,14 @@
 public class LC_876_MiddleOfLinkedList {
 
+    static class ListNode {
+        int val;
+        ListNode next;
+
+        ListNode(int val) {
+            this.val = val;
+        }
+    }
+
     public static ListNode middleNode(ListNode head) {
 
         ListNode slow = head;
@@ -12,16 +21,6 @@ public class LC_876_MiddleOfLinkedList {
 
         return slow;
     }
-
-    static class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode(int val) {
-            this.val = val;
-        }
-    }
-
 
     public static void main(String[] args) {
 
@@ -36,3 +35,6 @@ public class LC_876_MiddleOfLinkedList {
         System.out.println("Middle Node: " + middle.val);
     }
 }
+
+// time complexity : O(n)
+// space complexity : O(1)

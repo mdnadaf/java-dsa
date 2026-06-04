@@ -52,3 +52,6 @@ public class LC_141_Linked_List_Cycle {
         System.out.println("Cycle Present : " + result);
     }
 }
+
+// time complexity : O(n)
+// space complexity : O(1)

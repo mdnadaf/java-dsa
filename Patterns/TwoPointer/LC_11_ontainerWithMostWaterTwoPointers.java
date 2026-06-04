@@ -32,3 +32,6 @@ public class LC_11_ontainerWithMostWaterTwoPointers {
         System.out.println(maxArea(height));
     }
 }
+
+// time complexity : O(n)
+// space complexity : O(1)

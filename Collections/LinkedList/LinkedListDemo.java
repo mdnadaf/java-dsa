@@ -38,7 +38,7 @@ public class LinkedListDemo {
         // 9. size()  // O(1) (Internally tracked variable return karta hai)
         System.out.println(list.size()); // 3
 
-        // 10. Traversal loop 
+        // 10. Traversal loop
         for(Integer num : list){
             System.out.println(num);
         }

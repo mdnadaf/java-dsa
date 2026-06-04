@@ -29,3 +29,6 @@ public class LC_283_Move_Zeroes {
         
     }
 }
+
+// time complexity : O(n)
+// space complexity : O(1)
