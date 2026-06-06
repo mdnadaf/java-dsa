@@ -1,4 +1,4 @@
-public class LC_11_ontainerWithMostWaterTwoPointers {
+public class LC_11_ontainerWithMostWater {
 
     public static int maxArea(int[] height) {
 
