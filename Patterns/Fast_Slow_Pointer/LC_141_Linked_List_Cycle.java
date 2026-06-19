@@ -1,24 +1,27 @@
 public class LC_141_Linked_List_Cycle {
 
+    // Detect Cycle Using Floyd's Algorithm
     public static boolean hasCycle(ListNode head) {
+
+        if (head == null || head.next == null) {
+            return false;
+        }
 
         ListNode slow = head;
         ListNode fast = head;
 
         while (fast != null && fast.next != null) {
 
-            slow = slow.next;          // Move 1 step
-            fast = fast.next.next;     // Move 2 steps
+            slow = slow.next;          // 1 step
+            fast = fast.next.next;     // 2 steps
 
             if (slow == fast) {
-                return true;           // Cycle detected
+                return true;           // Cycle found
             }
         }
 
         return false;                  // No cycle
     }
-
-
 
     static class ListNode {
         int val;
@@ -29,16 +32,13 @@ public class LC_141_Linked_List_Cycle {
         }
     }
 
-
     public static void main(String[] args) {
 
-        // Creating nodes
         ListNode head = new ListNode(1);
         ListNode second = new ListNode(2);
         ListNode third = new ListNode(3);
         ListNode fourth = new ListNode(4);
 
-        // Linking nodes
         head.next = second;
         second.next = third;
         third.next = fourth;
@@ -46,12 +46,22 @@ public class LC_141_Linked_List_Cycle {
         // Create cycle: 4 -> 2
         fourth.next = second;
 
-        // Function call
-        boolean result = hasCycle(head);
-
-        System.out.println("Cycle Present : " + result);
+        System.out.println("Cycle Present : " + hasCycle(head));
     }
 }
 
-// time complexity : O(n)
-// space complexity : O(1)
+/*
+Problem : LC 141 - Linked List Cycle
+
+Approach:
+1. Use Slow and Fast Pointers.
+2. Slow moves one step at a time.
+3. Fast moves two steps at a time.
+4. If cycle exists, slow and fast will meet.
+5. If fast reaches null, no cycle exists.
+
+Time Complexity : O(n)
+Space Complexity : O(1)
+
+Pattern : Fast & Slow Pointer
+*/
