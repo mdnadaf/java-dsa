@@ -11,9 +11,7 @@ public class Delete_Middle_Element_Of_Stack {
 
         int top = stack.pop();
 
-        deleteMiddle(stack,
-                     current + 1,
-                     size);
+        deleteMiddle(stack,current + 1,size);
 
         stack.push(top);
     }
@@ -28,7 +26,7 @@ public class Delete_Middle_Element_Of_Stack {
         stack.push(4);
         stack.push(5);
 
-        deleteMiddle(stack, 0, stack.size());
+        deleteMiddle(stack,0,stack.size());
 
         while (!stack.isEmpty()) {
             System.out.println(stack.pop());
