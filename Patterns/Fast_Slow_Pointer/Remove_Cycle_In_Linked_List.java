@@ -1,6 +1,4 @@
-// LC_142_Remove_Cycle_In_Linked_List.java
-
-public class LC_142_Remove_Cycle_In_Linked_List {
+public class Remove_Cycle_In_Linked_List {
 
     static class Node {
         int data;
