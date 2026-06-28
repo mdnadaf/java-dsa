@@ -13,25 +13,16 @@ Approach:
     increment ==>> (rear+1)%size
     decrement ==>> (rear-1+size)%size
 
+    | Operation    | Pointer Move | Formula                                     |
+| ------------ | ------------ | ------------------------------------------- |
+| Insert Front | ⬅️ Peeche    | `front = (front - 1 + capacity) % capacity` |
+| Insert Rear  | ➡️ Aage      | `rear = (rear + 1) % capacity`              |
+| Delete Front | ➡️ Aage      | `front = (front + 1) % capacity`            |
+| Delete Rear  | ⬅️ Peeche    | `rear = (rear - 1 + capacity) % capacity`   |
+
 #################################################
 
-Operations:
-
-insertFront()
-insertLast()
-
-deleteFront()
-deleteLast()
-
-getFront()
-getRear()
-
-isEmpty()
-isFull()
-
-=================================================
-
-Time Complexity:
+Operations: & Time Complexity:
 
 insertFront() : O(1)
 insertLast()  : O(1)
